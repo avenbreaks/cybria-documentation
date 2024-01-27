@@ -4,30 +4,28 @@
   "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "mailto:info@cybria.io",
-    "newWindow": true
-  },
-  "explorer": {
-    "title": "Explorer ↗",
-    "type": "page",
-    "href": "https://cybascan.io",
-    "newWindow": true
-  },
-  "bridge": {
-    "title": "Bridge ↗",
-    "type": "page",
-    "href": "https://bridge.cybria.io",
-    "newWindow": true
-  },
-  "swap": {
-    "title": "Swap ↗",
-    "type": "page",
-    "href": "https://app.uniswap.org/#/swap?outputCurrency=0x1063181dc986F76F7eA2Dd109e16fc596d0f522A",
-    "newWindow": true
+    "type": "menu",
+    "items": {
+      "explorer": {
+        "title": "Mainnet Explorer ↗",
+        "href": "https://cybascan.io",
+        "newWindow": true
+      },
+      "testexplorer": {
+        "title": "Testnet Explorer ↗",
+        "href": "https://cybascan.io",
+        "newWindow": true
+      },
+      "bridge": {
+        "title": "Bridge ↗",
+        "href": "https://bridge.cybria.io",
+        "newWindow": true
+      },
+      "swap": {
+        "title": "Swap ↗",
+        "href": "https://app.uniswap.org/#/swap?outputCurrency=0x1063181dc986F76F7eA2Dd109e16fc596d0f522A",
+        "newWindow": true
+      }
+    }
   }
 }

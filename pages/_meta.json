@@ -9,7 +9,25 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "mailto:info@cybria.io",
+    "newWindow": true
+  },
+  "explorer": {
+    "title": "Explorer ↗",
+    "type": "page",
+    "href": "https://cybascan.io",
+    "newWindow": true
+  },
+  "bridge": {
+    "title": "Bridge ↗",
+    "type": "page",
+    "href": "https://bridge.cybria.io",
+    "newWindow": true
+  },
+  "swap": {
+    "title": "Swap ↗",
+    "type": "page",
+    "href": "https://app.uniswap.org/#/swap?outputCurrency=0x1063181dc986F76F7eA2Dd109e16fc596d0f522A",
     "newWindow": true
   }
 }

@@ -2,8 +2,8 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "features": {
+    "title": "Features",
     "type": "menu",
     "items": {
       "explorer": {
@@ -27,5 +27,11 @@
         "newWindow": true
       }
     }
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "href": "mailto:info@cybria.io",
+    "type": "page",
+    "newWindow": true
   }
 }

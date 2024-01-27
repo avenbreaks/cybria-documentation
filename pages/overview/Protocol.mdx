@@ -1,3 +1,12 @@
 # Rollup Protocol Overview
 
 The big idea that makes CybriaChain possible is the Optimistic Rollup. We'll go through a brief explainer of how Optimistic Rollups work at a high level. Then we'll explain why CybriaChain is built as an Optimistic Rollup and why we believe it's the best option for a system that addresses all of our design goals.
+
+### A. Solidity Compatibility
+Cybria Mainnet is designed to be EVM equivalent, which means Cybria Mainnet looks exactly like Ethereum in every way possible. Almost all Ethereum tooling works out of the box on Cybria Mainnet, including the Solidity smart contract language. However, there are a few minor differences between Cybria Mainnet and Ethereum that you should be aware of when building Solidity contracts.
+
+### B. EVM/Opcode Differences
+Most smart contracts will work on Cybria Mainnet without any changes. Check out the Differences Between Ethereum and Cybria Mainnet page for a detailed list of the few differences you should know about.
+
+### C. Gas Differences
+Cybria Mainnet uses the same gas costs as Ethereum. However, Cybria Mainnet also charges an L1 Data Fee for the cost of publishing an L2 transaction to L1. This fee is charged based on the size of a transaction in bytes. As a result, smart contract optimization techniques can differ slightly on Cybria Mainnet. Refer to the Contract Optimization guide for more information.

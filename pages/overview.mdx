@@ -1,31 +1,11 @@
-# Another Page
+# Rollup Protocol Overview
 
-```js filename="demo.js" {3} copy
-let a = 1;
+The big idea that makes CybriaChain possible is the Optimistic Rollup. We'll go through a brief explainer of how Optimistic Rollups work at a high level. Then we'll explain why CybriaChain is built as an Optimistic Rollup and why we believe it's the best option for a system that addresses all of our design goals.
 
-console.log(a);
-```
+### Rollup 4ever
+CybriaChain is an "Optimistic Rollup," which is basically just a fancy way of describing a blockchain that piggy-backs off of the security of another "parent" blockchain. Specifically, Cybria Rollups take advantage of the consensus mechanism (like PoW or PoS) of their parent chain instead of providing their own. In Cybria Mainnet's case this parent blockchain is Ethereum.
 
-## Component
+### Bridging ETH or Tokens Between Layers
+CybriaChain is designed so that users can send arbitrary messages between smart contracts on L2 (Cybria Mainnet, Cybria Sepolia, etc.) and the underlying L1 (Ethereum mainnet, Sepolia, etc). This makes it possible to transfer ETH or tokens, including ERC20 tokens, between the two networks. 
 
-import { useState } from 'react'
-
-{/* Import CSS modules */}
-import styles from '../components/counters.module.css'
-
-export const Counter = () => {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
-    </div>
-  );
-};
-
-<Counter/>
-
-## External Component
-
-import Counters from '../components/counters'
-
-<Counters />
+The exact mechanism by which this communication occurs differs depending on the direction in which messages are being sent. Cybria Mainnet uses this functionality in the Standard bridge to allow users to deposit tokens from Ethereum to Cybria Mainnet and also allow withdrawals of the same from Cybria Mainnet back to Ethereum.

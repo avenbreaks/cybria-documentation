@@ -1,0 +1,24 @@
+import Link from 'next/link'
+
+# Layers Rollup
+
+The Data Availability Layer defines where the raw inputs to an Optimisme based chain are published. An Cybria chain can use one or more Data Availability module to source its input data. Because an Cybria chain is derived from the Data Availability Layer, the Data Availability module(s) used have a significant impact on the security model of a system
+
+### Ethereum Data Availability
+Ethereum DA is currently the most widely used Data Availability module for the Cybria. When using the Ethereum DA module, source data can be derived from any piece of information accessible on the Ethereum blockchain. This includes Ethereum calldata, events, and 4844 data blobs.
+
+<br />
+
+<Link href="https://github.com/ethereum-optimism/optimism/blob/v1.1.4/specs/derivation.md#batch-submission-wire-format">Specifications ↗</Link> 
+<Link href="https://github.com/ethereum-optimism/optimism/tree/v1.1.4/op-batcher">Source Code ↗</Link>
+
+### Execution
+The Execution Layer defines the structure of state within an Cybria system and defines the state transition function that mutates this state. State transitions are triggered when inputs are received from the Derivation Layer via the Engine API. The Execution Layer abstraction opens up the door to EVM modifications or different underlying VMs entirely.
+
+### Ethereum Virtual Machine
+The EVM is an Execution Layer module that uses the same state representation and state transition function as the Ethereum Virtual Machine. The EVM module in the Ethereum Rollup configuration of the Cybria is a lightly modified version of the EVM that adds support for L2 transactions initiated on Ethereum and adds an extra L1 Data Fee to each transaction to account for the cost of publishing transactions to Ethereum.
+
+<br />
+
+<Link href="https://github.com/ethereum-optimism/optimism/blob/129032f15b76b0d2a940443a39433de931a97a44/specs/exec-engine.md">Specifications ↗</Link> 
+<Link href="https://github.com/ethereum-optimism/op-geth/tree/09ade3df6d1d3a4f8f308553825348be132bc960">Source Code ↗</Link>

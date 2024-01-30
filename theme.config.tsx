@@ -1,4 +1,5 @@
 import React from 'react'
+import DocslyClient from "./components/DocslyClient";
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
@@ -29,12 +30,17 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Cybria Technical Documentation',
   },
-  i18n: [
-    { locale: 'en-US', text: 'English' },
-    { locale: 'zh-CN', text: '中文' },
-    { locale: 'de-DE', text: 'Deutsch' },
-    { locale: 'ar-SA', text: 'العربية', direction: 'rtl' }
-  ],
+  editLink: {
+    text: '✏️ Edit this page on GitHub'
+  },
+  banner: {
+    key: '2.1-release',
+    text: (
+      <a href="https://bridge.cybria.io" target="_self">
+        📌 UPDATE: Cybria Mainnet Already Live. Please Check the last update for more info. → 📌
+      </a>
+    )
+  },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

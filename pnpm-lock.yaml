@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@docsly/react':
+    specifier: ^1.9.1
+    version: 1.9.1(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: ^13.0.6
     version: 13.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -38,6 +41,24 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
+  /@docsly/react@1.9.1(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MzInFvAXoAC2KlouOJgdKw7TLHShKwqDCv8JbmbISnUG/h1iEqGVTnfxwPJIPBfMGnkyqB6+7Ja+khV5Gir6hg==}
+    peerDependencies:
+      react: '>=17'
+      react-dom: '>=17'
+    dependencies:
+      '@heroicons/react': 2.1.1(react@18.2.0)
+      clsx: 1.2.1
+      dayjs: 1.11.10
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-error-boundary: 3.1.4(react@18.2.0)
+      react-hot-toast: 2.4.1(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
+      swr: 2.2.4(react@18.2.0)
+    transitivePeerDependencies:
+      - csstype
+    dev: false
+
   /@headlessui/react@1.7.10(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-1m66h/5eayTEZVT2PI13/2PG3EVC7a9XalmUtVSC8X76pcyKYMuyX1XAL2RUtCr8WhoMa/KrDEyoeU5v+kSQOw==}
     engines: {node: '>=10'}
@@ -48,6 +69,14 @@ packages:
       client-only: 0.0.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@heroicons/react@2.1.1(react@18.2.0):
+    resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@mdx-js/mdx@2.2.1:
@@ -538,6 +567,10 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: false
 
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: false
+
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -678,6 +711,14 @@ packages:
 
   /github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
+    dev: false
+
+  /goober@2.1.14(csstype@3.1.1):
+    resolution: {integrity: sha512-4UpC0NdGyAFqLNPnhCT2iHpza2q+RAY3GV85a/mRPdzyPQMsj0KmMMuetdIkzWRbJ+Hgau1EZztq8ImmiMGhsg==}
+    peerDependencies:
+      csstype: ^3.0.10
+    dependencies:
+      csstype: 3.1.1
     dev: false
 
   /graceful-fs@4.2.10:
@@ -1730,6 +1771,30 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-error-boundary@3.1.4(react@18.2.0):
+    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
+    engines: {node: '>=10', npm: '>=6'}
+    peerDependencies:
+      react: '>=16.13.1'
+    dependencies:
+      '@babel/runtime': 7.20.6
+      react: 18.2.0
+    dev: false
+
+  /react-hot-toast@2.4.1(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      goober: 2.1.14(csstype@3.1.1)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - csstype
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -1968,6 +2033,16 @@ packages:
       has-flag: 2.0.0
     dev: false
 
+  /swr@2.2.4(react@18.2.0):
+    resolution: {integrity: sha512-njiZ/4RiIhoOlAaLYDqwz5qH/KZXVilRLvomrx83HjzCWTfa+InyfAjv05PSFxnmLzZkNO9ZfvgoqzAaEI4sGQ==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: false
+
   /title@3.5.3:
     resolution: {integrity: sha512-20JyowYglSEeCvZv3EZ0nZ046vLarO37prvV0mbtQV7C8DJPGgN967r8SJkqd3XK3K3lD3/Iyfp3avjfil8Q2Q==}
     hasBin: true
@@ -2100,6 +2175,14 @@ packages:
       '@types/unist': 2.0.6
       unist-util-is: 5.1.1
       unist-util-visit-parents: 5.1.1
+    dev: false
+
+  /use-sync-external-store@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /uvu@0.5.6:

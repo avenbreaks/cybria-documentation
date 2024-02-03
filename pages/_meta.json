@@ -2,6 +2,11 @@
   "index": "Introduction",
   "overview": "Blockchain Overview",
   "advanced": "Getting Started",
+  "---": {
+    "type": "separator"
+  },
+  "tutorial": "Tutorial Onchain",
+  "ecosystem": "Ecosystem",
   "features": {
     "title": "Features",
     "type": "menu",

@@ -1,5 +1,4 @@
 import React from 'react'
-import DocslyClient from "./components/DocslyClient";
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {

@@ -7,6 +7,32 @@
   },
   "tutorial": "Tutorial Onchain",
   "ecosystem": "Ecosystem",
+  "socialmedia": {
+    "title": "Social Media",
+    "type": "menu",
+    "items": {
+      "telegram": {
+        "title": "Telegram ↗",
+        "href": "https://t.me/cybriacoin",
+        "newWindow": true
+      },
+      "twitter": {
+        "title": "Twitter ↗",
+        "href": "https://twitter.com/cybriacoin",
+        "newWindow": true
+      },
+      "medium": {
+        "title": "Medium ↗",
+        "href": "https://medium.com/@cybrialayer2",
+        "newWindow": true
+      },
+      "github": {
+        "title": "Github ↗",
+        "href": "https://github.com/Cybria-Chain",
+        "newWindow": true
+      }
+    }
+  },
   "features": {
     "title": "Features",
     "type": "menu",
@@ -29,6 +55,11 @@
       "swap": {
         "title": "Swap ↗",
         "href": "https://app.uniswap.org/#/swap?outputCurrency=0x1063181dc986F76F7eA2Dd109e16fc596d0f522A",
+        "newWindow": true
+      },
+      "stake": {
+        "title": "Stake ↗",
+        "href": "https://stake.cybria.io",
         "newWindow": true
       }
     }
